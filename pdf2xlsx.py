@@ -12,7 +12,7 @@ def main():
     excel_path = match.group(1) + '\\' + match.group(2) + '.xlsx'
     print(f'\nExcel path: {excel_path}')
 
-    opt = input("\nHit enter to convert all tables in the pdf file into excel sheets, enter number to convert specific page, and for multiple pages, enter the numbers separated by commas example: '1-5' or '1,3,5': ")
+    opt = input("\nHit enter to convert all tables in the pdf file into excel sheets, enter number to convert specific page, and for multiple pages, enter the numbers separated by commas, or hyphen for a range of pages. Example: '1-5' or '1,3,5': ")
     if not opt:
         opt = 'all'
     elif opt.isdigit():
